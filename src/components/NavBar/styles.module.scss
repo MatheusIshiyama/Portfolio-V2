@@ -1,0 +1,21 @@
+.headerContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark);
+    transition: 0.5s;
+    z-index: 1;
+
+    h1 {
+        font-size: 1.25rem;
+        color: var(--white);
+        font-family: 'Montserrat',sans-serif;
+        font-style: italic;
+        font-weight: 700;
+    }
+}
