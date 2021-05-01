@@ -1,0 +1,66 @@
+.headerContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 40px 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../../../public/background.png");
+    background-size: 100%;
+    transition: 0.5s;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-5em);
+    animation-name: showElement;
+    animation-delay: 4.5s;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+
+    h1 {
+        font-size: 1.5rem;
+        color: var(--white);
+        font-family: "Montserrat", sans-serif;
+        font-style: italic;
+        font-weight: 700;
+    }
+
+    .anchors {
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+    }
+
+    a {
+        text-decoration: none;
+        text-transform: capitalize;
+        font-family: "Amiko", sans-serif;
+        font-weight: 400;
+        font-size: 0.9em;
+        color: var(--white);
+    }
+
+    .languageSelect {
+        position: relative;
+
+        select {
+            background: transparent;
+            color: var(--white);
+
+            option {
+                color: black;
+            }
+        }
+    }
+}
+
+@keyframes showElement {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
