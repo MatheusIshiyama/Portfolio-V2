@@ -4,10 +4,10 @@ import { useTranslation } from "react-i18next";
 import styles from "./styles.module.scss";
 
 export default function Banner() {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     return (
-        <section className={styles.container}>
+        <section id="banner" className={styles.container}>
             <div className={styles.content}>
                 <div className={styles.text}>
                     <h2>{t("hello, i'm")}</h2>

@@ -1,16 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { GetStaticProps } from "next";
+import { Scrollbars } from "react-custom-scrollbars";
 import "../locales";
 
+import styles from "../styles/Home.module.scss";
+
 import { Loading, NavBar, Banner } from "../components";
+import ScrollBar from "../components/ScrollBar";
 
 export default function Home() {
+    const [loading, setLoading] = useState(true);
+
+    setTimeout(() => setLoading(false), 4500);
+
     return (
-        <>
-            <Loading />
+        <div className={styles.loading}>
+            {loading && <Loading />}
             <NavBar />
-            <Banner />
-        </>
+
+            <ScrollBar>
+                <Banner />
+            </ScrollBar>
+        </div>
     );
 }
 

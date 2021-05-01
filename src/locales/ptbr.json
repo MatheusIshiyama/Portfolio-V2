@@ -1,5 +1,10 @@
 {
     "about me": "Sobre mim",
+    "tecnologies" : "Tecnologias",
+    "my projects" : "Meu projetos",
+    "contact" : "Contato",
+    "english": "Inglês",
+    "portuguese": "Português",
     "hello, i'm": "Olá, eu sou o",
     "full stack developer": "Desenvolvedor Full Stack NodeJs & React"
 }
