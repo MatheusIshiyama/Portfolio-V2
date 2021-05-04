@@ -25,6 +25,7 @@ export default class Scrollbar extends Component {
                 renderView={this.renderView}
                 renderThumbHorizontal={this.renderThumb}
                 renderThumbVertical={this.renderThumb}
+                universal={true}
                 {...this.props}
             />
         );

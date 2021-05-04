@@ -1,10 +1,11 @@
 {
     "about me": "About me",
-    "tecnologies" : "Tecnologies",
-    "my projects" : "My projects",
-    "contacy" : "Contact",
+    "tecnologies": "Tecnologies",
+    "my projects": "My projects",
+    "contacy": "Contact",
     "english": "English",
     "portuguese": "Portuguese",
     "hello, i'm": "Hello, i'm",
-    "full stack developer": "Full Stack Developer NodeJs & React"
+    "full stack developer": "Full Stack Developer NodeJs & React",
+    "more info": "More info"
 }

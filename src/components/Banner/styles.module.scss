@@ -4,13 +4,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    padding-top: 40vh;
+    padding-bottom: 20px;
 }
 
 .content {
-    margin-left: 15em;
-    
+    margin-right: 15%;
+
     h1 {
         font-family: "Montserrat";
         font-size: 3em;
@@ -49,7 +52,7 @@
         animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
         animation-fill-mode: forwards;
     }
-    
+
     a {
         text-decoration: none;
         color: white;
@@ -57,11 +60,34 @@
         background-color: var(--purple);
         border-radius: 5px;
         font-family: "Amiko", sans-serif;
+        font-size: 1em;
         opacity: 0;
-        animation-name: showTextFromBottom;
+        animation-name: showTextFromTransparent;
         animation-delay: 4.5s;
         animation-duration: 2s;
         animation-fill-mode: forwards;
+    }
+}
+
+.more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+    opacity: 0;
+    animation-name: showTextFromTransparent;
+    animation-delay: 4.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+    p {
+        font-family: "Amiko", sans-serif;
+        font-size: 1em;
+    }
+
+    .moreIcon {
+        width: 15px;
+        height: 15px;
     }
 }
 
@@ -72,9 +98,105 @@
     }
 }
 
-@keyframes showTextFromBottom {
+@keyframes showTextFromTransparent {
     to {
         opacity: 1;
-        transform: translateY(0);
+    }
+}
+
+//* desktop screen size
+@media (max-width: 1500px) {
+    .content {
+        margin-right: 40%;
+    }
+}
+
+//* tablet screen size
+@media (max-width: 1000px) {
+    .content {
+        margin-right: 20%;
+    }
+}
+
+@media (max-width: 800px) {
+    .content {
+        margin-right: 10%;
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h2 {
+            font-size: 1.2em;
+        }
+
+        .text {
+            margin-bottom: 1.1em;
+        }
+
+        a {
+            font-size: 0.9em;
+        }
+    }
+    .more {
+        p {
+            font-size: 0.9em;
+        }
+    }
+}
+
+//* mobile default screen size
+@media (max-width: 525px) {
+    .content {
+        margin-right: 0;
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1em;
+        }
+
+        .text {
+            margin-bottom: 1.2em;
+        }
+
+        a {
+            font-size: 0.9em;
+        }
+    }
+
+    .more {
+        p {
+            font-size: 0.8em;
+        }
+    }
+}
+
+//* mobile small screen size
+@media (max-width: 350px) {
+    .content {
+        h1 {
+            font-size: 1.5em;
+        }
+
+        h2 {
+            font-size: 0.8em;
+        }
+
+        .text {
+            margin-bottom: 1em;
+        }
+
+        a {
+            font-size: 0.7em;
+        }
+    }
+
+    .more {
+        p {
+            font-size: 0.7em;
+        }
     }
 }
