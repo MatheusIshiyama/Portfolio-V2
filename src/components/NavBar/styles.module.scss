@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 80px;
-    padding: 40px 80px;
+    padding: 40px 40px 40px 80px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
     justify-content: space-between;
@@ -21,39 +21,44 @@
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-fill-mode: forwards;
 
-    h1 {
-        font-size: 1.5rem;
+    .logo {
+        font-size: 1.5em;
         color: var(--white);
         font-family: "Montserrat", sans-serif;
         font-style: italic;
         font-weight: 700;
-    }
-
-    .anchors {
-        display: flex;
-        width: 50%;
-        justify-content: space-around;
-    }
-
-    a {
         text-decoration: none;
-        text-transform: capitalize;
-        font-family: "Amiko", sans-serif;
-        font-weight: 400;
-        font-size: 0.9em;
-        color: var(--white);
+        outline: none;
     }
 
-    .languageSelect {
-        position: relative;
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
-        select {
-            background: transparent;
+        li {
+            position: relative;
+            list-style: none;
+        }
+
+        li a {
+            position: relative;
+            display: inline-block;
+            outline: none;
+            margin: 0 15px;
+            color: #f4f9ff;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-family: "Amiko", sans-serif;
+            font-weight: 400;
+            font-size: 0.9em;
             color: var(--white);
+        }
 
-            option {
-                color: black;
-            }
+        li .languageButton {
+            background-color: var(--purple);
+            padding: 5px 10px;
+            border-radius: 5px;
         }
     }
 }
@@ -62,5 +67,58 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+//* tablet screen size
+@media (max-width: 1000px) {
+    .headerContainer {
+        padding: 40px 20px 40px 40px;
+
+        .logo {
+            font-size: 1.2em;
+        }
+
+        .toggleButton {
+            width: 40px;
+            height: 40px;
+            background: url("../../../public/menu.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 30px;
+            cursor: pointer;
+        }
+
+        .toggle.active {
+            background: url("../../../public/close.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 30px;
+            cursor: pointer;
+        }
+
+        .menu {
+            position: fixed;
+            top: 80px;
+            left: -100%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 50px 100px 50px;
+            text-align: center;
+            width: 100%;
+            height: 100vh;
+            background: var(--dark-blue);
+            background-size: cover;
+            transition: 0.5s;
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .menu.active {
+            left: 0%;
+        }
+
+        .toggleButton {
+            filter: invert(1);
+        }
     }
 }

@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import styles from "./styles.module.scss";
@@ -13,32 +13,45 @@ export default function NavBar() {
         i18n.changeLanguage(language);
     }, [language]);
 
-    function handleChangeLanguage(event: ChangeEvent<HTMLSelectElement>) {
-        setLanguage(event.target.value as "en" | "ptbr");
+    function handleToggle() {
+        setToggle(!toggle);
+    }
+
+    function handleChangeLanguage() {
+        if (language === "en") return setLanguage("ptbr");
+        return setLanguage("en");
     }
 
     return (
         <header className={styles.headerContainer}>
-            <a href="#banner">
-                <h1>Matheus Ishiyama</h1>
+            <a href="#banner" className={styles.logo}>
+                Matheus Ishiyama
             </a>
-            <div className={styles.anchors}>
-                <a href="#">{t("about me")}</a>
-                <a href="#">{t("tecnologies")}</a>
-                <a href="#">{t("my projects")}</a>
-                <a href="#">{t("contact")}</a>
-            </div>
-            <div className={styles.languageSelect}>
-                <select
-                    name="language"
-                    id="language"
-                    defaultValue="en"
-                    onChange={(event) => handleChangeLanguage(event)}
-                >
-                    <option value="en">{t("english")}</option>
-                    <option value="ptbr">{t("portuguese")}</option>
-                </select>
-            </div>
+            <div
+                className={
+                    toggle ? [styles.toggleButton, styles.active].join(" ") : styles.toggleButton
+                }
+                onClick={handleToggle}
+            />
+            <ul className={toggle ? [styles.menu, styles.active].join(" ") : styles.menu}>
+                <li>
+                    <a href="#" onClick={handleToggle}>{t("about me")}</a>
+                </li>
+                <li>
+                    <a href="#" onClick={handleToggle}>{t("tecnologies")}</a>
+                </li>
+                <li>
+                    <a href="#" onClick={handleToggle}>{t("my projects")}</a>
+                </li>
+                <li>
+                    <a href="#" onClick={handleToggle}>{t("contact")}</a>
+                </li>
+                <li>
+                    <a className={styles.languageButton} onClick={handleChangeLanguage}>
+                        {language}
+                    </a>
+                </li>
+            </ul>
         </header>
     );
 }
