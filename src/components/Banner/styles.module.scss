@@ -113,8 +113,12 @@
 
 //* tablet screen size
 @media (max-width: 1000px) {
-    .content {
-        margin-right: 20%;
+    .container {
+        padding-bottom: 60px;
+
+        .content {
+            margin-right: 20%;
+        }
     }
 }
 

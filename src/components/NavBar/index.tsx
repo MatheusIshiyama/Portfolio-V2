@@ -35,16 +35,24 @@ export default function NavBar() {
             />
             <ul className={toggle ? [styles.menu, styles.active].join(" ") : styles.menu}>
                 <li>
-                    <a href="#" onClick={handleToggle}>{t("about me")}</a>
+                    <a href="#About me" onClick={handleToggle}>
+                        {t("about me")}
+                    </a>
                 </li>
                 <li>
-                    <a href="#" onClick={handleToggle}>{t("tecnologies")}</a>
+                    <a href="#" onClick={handleToggle}>
+                        {t("tecnologies")}
+                    </a>
                 </li>
                 <li>
-                    <a href="#" onClick={handleToggle}>{t("my projects")}</a>
+                    <a href="#" onClick={handleToggle}>
+                        {t("my projects")}
+                    </a>
                 </li>
                 <li>
-                    <a href="#" onClick={handleToggle}>{t("contact")}</a>
+                    <a href="#" onClick={handleToggle}>
+                        {t("contact")}
+                    </a>
                 </li>
                 <li>
                     <a className={styles.languageButton} onClick={handleChangeLanguage}>

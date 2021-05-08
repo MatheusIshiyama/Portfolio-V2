@@ -9,7 +9,7 @@ export default function AboutMe() {
     const { t } = useTranslation();
 
     return (
-        <section className={styles.container}>
+        <section id="About me" className={styles.container}>
             <h1>{t("about me")}</h1>
             <div className={styles.content}>
                 <div className={styles.about}>
