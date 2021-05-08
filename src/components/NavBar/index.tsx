@@ -35,7 +35,7 @@ export default function NavBar() {
             />
             <ul className={toggle ? [styles.menu, styles.active].join(" ") : styles.menu}>
                 <li>
-                    <a href="#" onClick={handleToggle}>
+                    <a href="#About me" onClick={handleToggle}>
                         {t("about me")}
                     </a>
                 </li>
