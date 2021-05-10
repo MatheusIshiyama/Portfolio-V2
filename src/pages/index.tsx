@@ -4,7 +4,7 @@ import "../locales";
 
 import styles from "../styles/Home.module.scss";
 
-import { Loading, NavBar, Banner, AboutMe, Skills } from "../components";
+import { Loading, NavBar, Banner, AboutMe, Skills, Footer } from "../components";
 import ScrollBar from "../components/ScrollBar";
 
 export default function Home() {
@@ -23,6 +23,7 @@ export default function Home() {
                     <>
                         <AboutMe />
                         <Skills />
+                        <Footer />
                     </>
                 )}
             </ScrollBar>
