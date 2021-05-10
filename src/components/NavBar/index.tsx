@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 import styles from "./styles.module.scss";
 
-export default function NavBar() {
+export function NavBar() {
     const [toggle, setToggle] = useState<boolean>(false);
     const [language, setLanguage] = useState<"en" | "ptbr">("en");
 
