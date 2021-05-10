@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { GetStaticProps } from "next";
-import { Scrollbars } from "react-custom-scrollbars";
 import "../locales";
 
 import styles from "../styles/Home.module.scss";
