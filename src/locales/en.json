@@ -1,6 +1,6 @@
 {
     "about me": "About me",
-    "tecnologies": "Tecnologies",
+    "skills": "Skills",
     "my projects": "My projects",
     "contacy": "Contact",
     "english": "English",
@@ -16,5 +16,10 @@
     "experience 1 title": "Internship as Full Stack Developer | Node.js & React",
     "experience 1 location": "at Nexus GeoEngenharia - Technological Park of São José dos Campos, SP - Brazil. (April - May / 2019)",
     "experience 2 title": "Internship as Programming Instructor",
-    "experience 2 location": "at Happy Code - São José dos Campos, SP - Brazil. (May - December / 2019)"
+    "experience 2 location": "at Happy Code - São José dos Campos, SP - Brazil. (May - December / 2019)",
+    "my skills": "My skills",
+    "top skills domain": "Top skills domain",
+    "skills text 1": "At the moment, I have a good knowledge and experience in Node.js, Javascript, Typescript, MongoDB, SQL, Express, Jest, Discord.js, HTML5, CSS, SASS, Next.js, React, Expo and React Native.",
+    "skills text 2": "I have already developed some applications during the college using Java, Python and C, but I didn't go deeper into it.",
+    "skills text 3": "I have interest in study about Vue.js, Nuxt.js, Angular, Flutter, Java, Spring Boot, Pyhton, DJango, C, C# and C++."
 }

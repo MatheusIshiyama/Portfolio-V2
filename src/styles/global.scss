@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
+    scroll-behavior: smooth;
+    scroll-margin-top: 80px;
 }
 
 :root {
@@ -10,7 +12,8 @@
     --black: #000;
 
     --dark-blue: #110f35;
-
+    
     --purple: #8f00ff;
+    --purple-dark: #270444;
     --purple-light: #cdd1fe;
 }
