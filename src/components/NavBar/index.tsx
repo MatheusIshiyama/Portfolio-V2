@@ -41,7 +41,7 @@ export default function NavBar() {
                 </li>
                 <li>
                     <a href="#" onClick={handleToggle}>
-                        {t("tecnologies")}
+                        {t("skills")}
                     </a>
                 </li>
                 <li>
