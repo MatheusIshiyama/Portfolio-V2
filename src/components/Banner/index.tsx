@@ -15,7 +15,7 @@ export default function Banner() {
                     <h1>Matheus Ishiyama</h1>
                     <h2>{t("full stack developer")}</h2>
                 </div>
-                <a href="#">{t("about me")}</a>
+                <a href="#AboutMe">{t("about me")}</a>
             </div>
             <div className={styles.more}>
                 <p>{t('more info')}</p>
