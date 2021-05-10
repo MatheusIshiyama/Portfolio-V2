@@ -27,39 +27,53 @@ export default function NavBar() {
             <a href="#banner" className={styles.logo}>
                 Matheus Ishiyama
             </a>
-            <div
-                className={
-                    toggle ? [styles.toggleButton, styles.active].join(" ") : styles.toggleButton
-                }
-                onClick={handleToggle}
-            />
-            <ul className={toggle ? [styles.menu, styles.active].join(" ") : styles.menu}>
-                <li>
-                    <a href="#AboutMe" onClick={handleToggle}>
-                        {t("about me")}
-                    </a>
-                </li>
-                <li>
-                    <a href="#" onClick={handleToggle}>
-                        {t("skills")}
-                    </a>
-                </li>
-                <li>
-                    <a href="#" onClick={handleToggle}>
-                        {t("my projects")}
-                    </a>
-                </li>
-                <li>
-                    <a href="#" onClick={handleToggle}>
-                        {t("contact")}
-                    </a>
-                </li>
-                <li>
+            <div className={styles.sections}>
+                <div
+                    className={
+                        toggle
+                            ? [styles.toggleButton, styles.active].join(" ")
+                            : styles.toggleButton
+                    }
+                    onClick={handleToggle}
+                />
+                <ul className={toggle ? [styles.menu, styles.active].join(" ") : styles.menu}>
+                    <li>
+                        <a href="#banner" onClick={handleToggle}>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#AboutMe" onClick={handleToggle}>
+                            {t("about me")}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onClick={handleToggle}>
+                            {t("services")}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Skills" onClick={handleToggle}>
+                            {t("skills")}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onClick={handleToggle}>
+                            {t("my projects")}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onClick={handleToggle}>
+                            {t("contact")}
+                        </a>
+                    </li>
+                </ul>
+                <div>
                     <a className={styles.languageButton} onClick={handleChangeLanguage}>
                         {language}
                     </a>
-                </li>
-            </ul>
+                </div>
+            </div>
         </header>
     );
 }
