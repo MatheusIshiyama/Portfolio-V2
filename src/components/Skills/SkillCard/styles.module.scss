@@ -1,0 +1,79 @@
+.container {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-areas: "image" "skill";
+    gap: 10px;
+
+    .skillLogo {
+        grid-area: image;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+            display: flex;
+            height: fit-content;
+
+            img {
+                height: 20px;
+            }
+        }
+
+        h3 {
+            font-family: "Amiko", sans-serif;
+            font-size: 1em;
+        }
+    }
+
+    .skillInfo {
+        grid-area: skill;
+        width: 100%;
+        height: 5px;
+        background-color: var(--purple-light);
+
+        .skillInfoProgressBar {
+            background-color: var(--purple);
+            height: 5px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        .skillLogo {
+            h3 {
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        .skillLogo {
+            h3 {
+                font-size: 0.8em;
+            }
+        }
+    }
+}
+@media (max-width: 550px) {
+    .container {
+        .skillLogo {
+            h3 {
+                font-size: 0.75em;
+            }
+        }
+    }
+}
+@media (max-width: 370px) {
+    .container {
+        .skillLogo {
+            h3 {
+                font-size: 0.7em;
+            }
+        }
+    }
+}

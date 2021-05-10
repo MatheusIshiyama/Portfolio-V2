@@ -16,5 +16,10 @@
     "experience 1 title": "Estágio como Desenvolvedor Full Stack | Node.js & React",
     "experience 1 location": "na Nexus GeoEngenharia - Parque Tecnológico de São José dos Campos, SP - Brasil. (Abril - Maio / 2019)",
     "experience 2 title": "Estágio como Instrutor de Programação",
-    "experience 2 location": "na Happy Code - São José dos Campos, SP - Brasil. (Maio - Dezembro / 2019)"
+    "experience 2 location": "na Happy Code - São José dos Campos, SP - Brasil. (Maio - Dezembro / 2019)",
+    "my skills": "Minhas habilidades",
+    "top skills domain": "Domínio das principais habilidades",
+    "skills text 1": "No momento, eu tenho bons conhecimentos e experiência em Node.js, Javascript, Typescript, MongoDB, SQL, Express, Jest, Discord.js, HTML5, CSS, SASS, Next.js, React, Expo e React Native.",
+    "skills text 2": "Eu já desenvolvi aplicações durante a faculdade usando Java, Python e C, mas não me aprofundei nisso.",
+    "skills text 3": "Eu tenho interesse em estudar sobre Vue.js, Nuxt.js, Angular, Flutter, Java, Spring Boot, Pyhton, DJango, C, C# and C++."
 }

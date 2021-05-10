@@ -1,0 +1,130 @@
+.container {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    gap: 30px;
+    padding: 100px;
+    padding-top: 0;
+    background-color: var(--purple-dark);
+    color: var(--purple-light);
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 2em;
+    }
+
+    .content {
+        display: grid;
+        grid-template-areas: "skills text";
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        font-family: "Amiko", sans-serif;
+
+        .skills {
+            grid-area: skills;
+            text-align: center;
+
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+
+        .text {
+            grid-area: text;
+            align-self: center;
+
+            p {
+                font-size: 1.1em;
+
+                & + p {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        h1 {
+            font-size: 1.75em;
+        }
+
+        .content {
+            .skills {
+                h2 {
+                    font-size: 1em;
+                }
+            }
+
+            .text {
+                p {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 70px;
+        padding-top: 0;
+        .content {
+            grid-template-areas: "skills" "text";
+            grid-template-columns: none;
+            grid-template-rows: 1fr 0.5fr;
+            gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        padding: 50px;
+        padding-top: 0;
+        h1 {
+            font-size: 1.5em;
+        }
+
+        .content {
+            .skills {
+                h2 {
+                    font-size: 0.9em;
+                }
+            }
+
+            .text {
+                p {
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+ }
+
+ @media (max-width: 370px) {
+    .container {
+        padding: 30px;
+        padding-top: 0;
+        h1 {
+            font-size: 1.25em;
+        }
+
+        .content {
+            .skills {
+                h2 {
+                    font-size: 0.7em;
+                }
+            }
+
+            .text {
+                p {
+                    font-size: 0.6em;
+                }
+            }
+        }
+    }
+ }
