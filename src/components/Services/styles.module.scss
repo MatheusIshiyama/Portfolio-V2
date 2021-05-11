@@ -51,8 +51,7 @@
 
 @media (max-width: 550px) {
     .container {
-        padding: 10px;
-        padding-top: 0;
+        padding: 0 10px 80px;
         .content {
             grid-template-columns: 0.9fr;
         }
