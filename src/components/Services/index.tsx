@@ -38,7 +38,7 @@ export function Services() {
         services.map((service, index) => <ServiceCard key={index} {...service} />);
 
     return (
-        <section className={styles.container}>
+        <section id="Services" className={styles.container}>
             <h1>{t("services")}</h1>
             <div className={styles.content}>{serviceCards()}</div>
         </section>
