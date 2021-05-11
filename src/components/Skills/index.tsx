@@ -7,7 +7,7 @@ import { SkillCardInterface } from "../../interfaces";
 
 import styles from "./styles.module.scss";
 
-export default function Skills() {
+export function Skills() {
     const { t } = useTranslation();
 
     const skills: SkillCardInterface[] = [

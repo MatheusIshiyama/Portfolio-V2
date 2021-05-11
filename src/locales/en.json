@@ -22,5 +22,14 @@
     "top skills domain": "Top skills domain",
     "skills text 1": "At the moment, I have a good knowledge and experience in Node.js, Javascript, Typescript, MongoDB, SQL, Express, Jest, Discord.js, HTML5, CSS, SASS, Next.js, React, Expo and React Native.",
     "skills text 2": "I have already developed some applications during the college using Java, Python and C, but I didn't go deeper into it.",
-    "skills text 3": "I have interest in study about Vue.js, Nuxt.js, Angular, Flutter, Java, Spring Boot, Pyhton, DJango, C, C# and C++."
+    "skills text 3": "I have interest in study about Vue.js, Nuxt.js, Angular, Flutter, Java, Spring Boot, Pyhton, DJango, C, C# and C++.",
+    "service title 1": "Responsive web sites",
+    "service description 1": "Development of responsive web sites that may or may not have a design of the desired screens.",
+    "service title 2": "Mobile apps",
+    "service description 2": "Development of applications for mobile devices, to be made available in stores (Google Play / Apple Store).",
+    "service title 3": "Backend services",
+    "service description 3": "Development of RESTful API's using other API's / registration / authentication system using socials (Google / Facebook).",
+    "service title 4": "Discord Bots",
+    "service description 4": "Development of Bots for discord, be it music, notification, server management, or whatever you need.",
+    "developed by": "Developed with ❤ by"
 }

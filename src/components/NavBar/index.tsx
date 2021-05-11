@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 import styles from "./styles.module.scss";
 
-export default function NavBar() {
+export function NavBar() {
     const [toggle, setToggle] = useState<boolean>(false);
     const [language, setLanguage] = useState<"en" | "ptbr">("en");
 
@@ -48,13 +48,13 @@ export default function NavBar() {
                         </a>
                     </li>
                     <li>
-                        <a href="#" onClick={handleToggle}>
-                            {t("services")}
+                        <a href="#Skills" onClick={handleToggle}>
+                            {t("skills")}
                         </a>
                     </li>
                     <li>
-                        <a href="#Skills" onClick={handleToggle}>
-                            {t("skills")}
+                        <a href="#Services" onClick={handleToggle}>
+                            {t("services")}
                         </a>
                     </li>
                     <li>

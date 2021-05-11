@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 import styles from "./styles.module.scss";
 
-export default function AboutMe() {
+export function AboutMe() {
     const { t } = useTranslation();
 
     return (

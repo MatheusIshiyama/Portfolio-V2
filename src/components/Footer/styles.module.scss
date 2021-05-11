@@ -1,0 +1,42 @@
+.container {
+    background-color: var(--dark-blue);
+    height: max-content;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    h2 {
+        font-family: "Montserrat", sans-serif;
+        color: var(--white);
+        text-shadow: 0 0 0.75em currentColor;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        h2 {
+            font-size: 0.9em;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        h2 {
+            font-size: 0.8em;
+            text-shadow: 0 0 0.65em currentColor;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        h2 {
+            font-size: 0.7em;
+            text-shadow: 0 0 0.55em currentColor;
+        }
+    }
+}

@@ -4,7 +4,7 @@ import { FiChevronDown } from 'react-icons/fi';
 
 import styles from "./styles.module.scss";
 
-export default function Banner() {
+export function Banner() {
     const { t } = useTranslation();
 
     return (
