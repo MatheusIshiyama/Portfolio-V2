@@ -23,5 +23,14 @@
     "skills text 1": "No momento, eu tenho bons conhecimentos e experiência em Node.js, Javascript, Typescript, MongoDB, SQL, Express, Jest, Discord.js, HTML5, CSS, SASS, Next.js, React, Expo e React Native.",
     "skills text 2": "Eu já desenvolvi aplicações durante a faculdade usando Java, Python e C, mas não me aprofundei nisso.",
     "skills text 3": "Eu tenho interesse em estudar sobre Vue.js, Nuxt.js, Angular, Flutter, Java, Spring Boot, Pyhton, DJango, C, C# and C++.",
+    "service title 1": "Web sites responsivos",
+    "service description 1": "Desenvolvimento de web sites responsivos podendo ou não, ter um design das telas desejadas.",
+    "service title 2": "Aplicativos móveis",
+    "service description 2": "Desenvolvimento de aplicativos para dispositivos móveis, para disponibilizar nas stores (Google Play / Apple Store).",
+    "service title 3": "Serviços backend",
+    "service description 3": "Desenvolvimento de API's RESTful podendo utilizando outras API's / sistema de cadastro / autenticação por rede social (Google / Facebook).",
+    "service title 4": "Bots de Discord",
+    "service description 4": "Desenvolvimento de Bots para discord, sendo de música, de notificação, de gerenciamento de servidor, ou para o quê você precise.",
+    
     "developed by": "Desenvolvido com ❤ por"
 }
