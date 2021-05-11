@@ -1,0 +1,109 @@
+.container {
+    min-height: calc(100vh - 140px);
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    gap: 30px;
+    padding: 100px;
+    padding-top: 0;
+    background-color: var(--purple-dark);
+    color: var(--white);
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 2em;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        a {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            width: fit-content;
+            text-decoration: none;
+            line-height: 32px;
+            color: var(--white);
+
+            & + a {
+                margin-top: 20px;
+            }
+
+            .icon {
+                transition: 0.5s;
+            }
+
+            h2 {
+                font-family: "Amiko", sans-serif;
+                font-size: 1.5em;
+                margin-left: 20px;
+                transition: 0.5s;
+            }
+        }
+
+        a:hover {
+            color: var(--purple);
+            text-shadow: 0 0 1em currentColor;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .container {
+        padding: 75px;
+        padding-top: 0;
+        h1 {
+            font-size: 1.5em;
+        }
+
+        .content {
+            a {
+                h2 {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        padding: 50px;
+        padding-top: 0;
+        h1 {
+            font-size: 1.25em;
+        }
+
+        .content {
+            a {
+                h2 {
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        padding: 30px;
+        padding-top: 0;
+        h1 {
+            font-size: 1em;
+        }
+
+        .content {
+            a {
+                h2 {
+                    font-size: 0.7em;
+                }
+            }
+        }
+    }
+}

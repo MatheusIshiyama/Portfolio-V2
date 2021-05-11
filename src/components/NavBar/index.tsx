@@ -58,12 +58,12 @@ export function NavBar() {
                         </a>
                     </li>
                     <li>
-                        <a href="#" onClick={handleToggle}>
+                        <a href="#Projects" onClick={handleToggle}>
                             {t("my projects")}
                         </a>
                     </li>
                     <li>
-                        <a href="#" onClick={handleToggle}>
+                        <a href="#Contact" onClick={handleToggle}>
                             {t("contact")}
                         </a>
                     </li>
