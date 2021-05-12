@@ -33,6 +33,10 @@
 
 @media (max-width: 1050px) {
     .container {
+        h1 {
+            font-size: 1.75em;
+        }
+
         .content {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -51,10 +55,22 @@
 
 @media (max-width: 550px) {
     .container {
-        padding: 10px;
-        padding-top: 0;
+        padding: 0 10px 80px;
+
+        h1 {
+            font-size: 1.5em;
+        }
+
         .content {
             grid-template-columns: 0.9fr;
+        }
+    }
+}
+
+@media (max-width:370px) {
+    .container {
+        h1 {
+            font-size: 1.25em;
         }
     }
 }
