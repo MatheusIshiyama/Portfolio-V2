@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { GetStaticProps } from "next";
 import "../locales";
 
 import styles from "../styles/Home.module.scss";
@@ -43,11 +42,3 @@ export default function Home() {
         </div>
     );
 }
-
-export const getStaticProps: GetStaticProps = async () => {
-    return {
-        props: {
-            revalidate: 60 * 60 * 24, //* update once a day.
-        },
-    };
-};
