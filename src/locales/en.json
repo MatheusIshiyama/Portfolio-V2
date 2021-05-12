@@ -31,5 +31,8 @@
     "service description 3": "Development of RESTful API's using other API's / registration / authentication system using socials (Google / Facebook).",
     "service title 4": "Discord Bots",
     "service description 4": "Development of Bots for discord, be it music, notification, server management, or whatever you need.",
+    "project description 1": "Music Player developed using Flutter. This a simple music player for Android devices.",
+    "project description 2": "A landing page developed using Next.js and React to learn more about this frameworks.",
+    "project description 3": "An API to download songs and videos from Youtube (.mp3 and .mp4 files).",
     "developed by": "Developed with ❤ by"
 }

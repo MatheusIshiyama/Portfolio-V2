@@ -5,4 +5,5 @@ export * from "./AboutMe";
 export * from "./Skills";
 export * from './Services';
 export * from './Contact';
+export * from './Projects';
 export * from './Footer';
