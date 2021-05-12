@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Head from "next/head";
 import "../locales";
 
 import styles from "../styles/Home.module.scss";
@@ -22,23 +23,29 @@ export default function Home() {
     setTimeout(() => setLoading(false), 4500);
 
     return (
-        <div className={styles.loading}>
-            {loading && <Loading />}
-            <NavBar />
+        <>
+            <Head>
+                <title>Matheus Ishiyama</title>
+                <link rel="icon" href="./background.png" />
+            </Head>
+            <div className={styles.loading}>
+                {loading && <Loading />}
+                <NavBar />
 
-            <ScrollBar>
-                <Banner />
-                {!loading && (
-                    <>
-                        <AboutMe />
-                        <Skills />
-                        <Services />
-                        <Projects />
-                        <Contact />
-                        <Footer />
-                    </>
-                )}
-            </ScrollBar>
-        </div>
+                <ScrollBar>
+                    <Banner />
+                    {!loading && (
+                        <>
+                            <AboutMe />
+                            <Skills />
+                            <Services />
+                            <Projects />
+                            <Contact />
+                            <Footer />
+                        </>
+                    )}
+                </ScrollBar>
+            </div>
+        </>
     );
 }
