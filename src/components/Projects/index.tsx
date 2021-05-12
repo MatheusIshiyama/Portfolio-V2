@@ -23,7 +23,7 @@ export function Projects() {
             url: "https://github.com/MatheusIshiyama/alivio-landing-page-nextjs",
         },
         {
-            title: 'Youtube Download API',
+            title: "Youtube Download API",
             description: t("project description 3"),
             url: "https://github.com/MatheusIshiyama/youtube-download-api",
         },
@@ -35,8 +35,12 @@ export function Projects() {
         <section id="Projects" className={styles.container}>
             <h1>{t("my projects")}</h1>
             <div className={styles.content}>{projectsCards()}</div>
-            <a href="https://github.com/MatheusIshiyama?tab=repositories" target="blank" className={styles.githubProjects}>
-                <FiGithub /> Mais projetos
+            <a
+                href="https://github.com/MatheusIshiyama?tab=repositories"
+                target="blank"
+                className={styles.githubProjects}
+            >
+                <FiGithub /> {t("more projects")}
             </a>
         </section>
     );

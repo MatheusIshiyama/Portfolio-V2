@@ -17,10 +17,10 @@ export function Banner() {
                 </div>
                 <a href="#AboutMe">{t("about me")}</a>
             </div>
-            <div className={styles.more}>
+            <a href="#AboutMe" className={styles.more}>
                 <p>{t('more info')}</p>
                 <FiChevronDown className={styles.moreIcon} />
-            </div>
+            </a>
         </section>
     );
 }
