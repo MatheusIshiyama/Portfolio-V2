@@ -27,35 +27,35 @@ export function AboutMe() {
                             <h4>{t("experience 1 location")}</h4>
                             <p className={styles.tecnologies}>
                                 <img
-                                    src="https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=Node.js&logoColor=white"
+                                    src="https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white"
                                     alt="Node.js"
                                 />{" "}
                                 <img
-                                    src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"
+                                    src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
                                     alt="Javascript"
                                 />{" "}
                                 <img
-                                    src="https://img.shields.io/badge/-React-1572B6?style=flat-square&logo=react&logoColor=white"
+                                    src="https://img.shields.io/badge/-React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
                                     alt="React"
                                 />{" "}
                                 <img
-                                    src="https://img.shields.io/badge/-Bootstrap-7952b3?style=flat-square&logo=bootstrap&logoColor=white"
-                                    alt="React"
+                                    src="https://img.shields.io/badge/-Bootstrap-7952b3?style=for-the-badge&logo=bootstrap&logoColor=white"
+                                    alt="Bootstrap"
                                 />{" "}
                                 <img
-                                    src="https://img.shields.io/badge/-Jest-fa383e?style=flat-square&logo=jest&logoColor=white"
+                                    src="https://img.shields.io/badge/-Jest-fa383e?style=for-the-badge&logo=jest&logoColor=white"
                                     alt="Jest"
                                 />{" "}
                                 <img
-                                    src="https://img.shields.io/badge/-Jenkins-d24939?style=flat-square&logo=jenkins&logoColor=white"
+                                    src="https://img.shields.io/badge/-Jenkins-d24939?style=for-the-badge&logo=jenkins&logoColor=white"
                                     alt="Jenkins"
                                 />{" "}
                                 <img
-                                    src="https://img.shields.io/badge/-Docker-2496ed?style=flat-square&logo=docker&logoColor=white"
+                                    src="https://img.shields.io/badge/-Docker-2496ed?style=for-the-badge&logo=docker&logoColor=white"
                                     alt="Docker"
                                 />{" "}
                                 <img
-                                    src="https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white"
+                                    src="https://img.shields.io/badge/-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"
                                     alt="PostgreSQL"
                                 />{" "}
                             </p>
@@ -65,11 +65,11 @@ export function AboutMe() {
                             <h4>{t("experience 2 location")}</h4>
                             <p className={styles.tecnologies}>
                                 <img
-                                    src="https://img.shields.io/badge/-C_/_C++-blue?style=flat-square&logo=c&logoColor=white"
+                                    src="https://img.shields.io/badge/-C_/_C++-blue?style=for-the-badge&logo=c&logoColor=white"
                                     alt="C"
                                 />{" "}
                                 <img
-                                    src="https://img.shields.io/badge/-Arduino-008184?style=flat-square&logo=arduino&logoColor=white"
+                                    src="https://img.shields.io/badge/-Arduino-008184?style=for-the-badge&logo=arduino&logoColor=white"
                                     alt="Arduino"
                                 />{" "}
                             </p>
