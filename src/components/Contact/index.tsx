@@ -25,7 +25,7 @@ export function Contact() {
                 </a>
                 <a>
                     <FiMessageSquare size={32} className={styles.icon} />
-                    <h2>Discord: Bravan#6013</h2>
+                    <h2>Discord: Matheus Ishiyama#6013</h2>
                 </a>
             </div>
         </section>
