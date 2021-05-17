@@ -29,13 +29,9 @@
 
         a {
             text-decoration: none;
-            color: var(--purple-dark);
+            color: var(--white);
             font-size: 0.8em;
             transition: 0.5s;
-
-            &:hover {
-                color: var(--purple-light);
-            }
         }
     }
 
