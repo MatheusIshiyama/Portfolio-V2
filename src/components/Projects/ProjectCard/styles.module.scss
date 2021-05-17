@@ -2,7 +2,7 @@
     width: 400px;
     height: 300px;
     border-radius: 15px;
-    background-color: var(--purple);
+    background-color: var(--purple-dark);
     font-family: "Amiko", sans-serif;
     text-decoration: none;
     color: var(--white);
@@ -42,6 +42,7 @@
     &:hover {
         width: 410px;
         height: 310px;
+        background-color: var(--purple);
         box-shadow: 0 0 2em var(--purple);
     }
 }

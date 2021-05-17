@@ -9,7 +9,7 @@ export default function SkillCard(skillInfo: SkillCardInterface) {
 
     function generateLogo(skillInfo: SkillCardInterface): string {
         const { title, color, logo, logoColor } = skillInfo;
-        return `https://img.shields.io/badge/-${title}-${color}?style=flat-square&logo=${logo}&logoColor=${logoColor}`;
+        return `https://img.shields.io/badge/-${title}-${color}?style=for-the-badge&logo=${logo}&logoColor=${logoColor}`;
     }
 
     return (
